@@ -1,15 +1,44 @@
 @font-face {
-    font-family: 'San Francisco Pro Display Regular', sans-serif;
-    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Regular.woff') format('woff');
-    font-weight: 400;
-    font-display: swap;    
+	font-family: 'SFProDisplay-Regular';
+	src: url('../fonts/SFProDisplay-Regular.eot');
+	src: local('☺'), url('../fonts/SFProDisplay-Regular.woff') format('woff'), url('../fonts/SFProDisplay-Regular.woff2') format('truetype'), url('../fonts/SFProDisplay-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
+
+
+
 @font-face {
-    font-family: 'San Francisco Pro Display Medium', sans-serif;
-    src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Medium.woff') format('woff');
-    font-weight: 500;
-    font-display: swap;    
+	font-family: 'SFProDisplay-Medium';
+	src: url('../fonts/SFProDisplay-Medium.eot');
+	src: local('☺'), url('../fonts/SFProDisplay-Medium.woff') format('woff'), url('../fonts/SFProDisplay-Medium.woff2') format('truetype'), url('../fonts/SFProDisplay-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+    font-display: swap; 
 }
+
+
+
+
+@font-face {
+	font-family: 'SFUIText-Regular';
+	src: url('../fonts/SFUIText-Regular.eot');
+	src: local('☺'), url('../fonts/SFUIText-Regular.woff') format('woff'), url('../fonts/SFUIText-Regular.woff2') format('truetype'), url('../fonts/SFUIText-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+    font-display: swap; 
+}
+
+
+
+
+@font-face {
+	font-family: 'Conv_SFUIText-Medium';
+	src: url('../fonts/SFUIText-Medium.eot');
+	src: local('☺'), url('../fonts/SFUIText-Medium.woff') format('woff'), url('../fonts/SFUIText-Medium.woff2') format('truetype'), url('../fonts/SFUIText-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+    font-display: swap; 
+}
+

@@ -2,6 +2,7 @@
 @import 'global';
 @import 'fonts';
 @import 'normilize';
+@import url('../fonts/SFUIDisplay-Regular');
 
 
 
@@ -170,7 +171,7 @@ html {
     }
 }
 .main-info {
-    font-family: 'SF Pro', sans-serif;
+    font-family: 'SF Pro Text', sans-serif;
 }
 .main-info__inner {
     display: flex;
@@ -181,12 +182,14 @@ html {
     min-height: 430px;
     object-fit: contain;
     margin-bottom: 50px;
+    margin: 0 auto 50px;
 }
 
 .main-info__title {
+    font-family: 'SFProDisplay-Regular', sans-serif;
     font-size: 27px;
     max-width: 330px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 33px;
     margin-bottom: 40px;
 }
@@ -282,6 +285,7 @@ html {
 .about-info__inner {
 }
 .about-info__title {
+    font-family: 'SF Pro Text', sans-serif;
     font-size: 36px;
     line-height: 43px;
     font-weight: 400;
