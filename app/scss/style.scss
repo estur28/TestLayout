@@ -1,7 +1,8 @@
-@import 'vars';
+
 @import 'global';
 @import 'fonts';
 @import 'normilize';
+
 @import url('../fonts/SFUIDisplay-Regular');
 
 
@@ -19,36 +20,47 @@ html {
 .header {
     max-width: 1440px;
     min-height: 235px;
+    margin: 14px auto 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-
+    background: #FFFFFF;
+    box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.16);
 }
 
 .header-inner {
-    margin-right: 17px;
+    font-weight: 600;
+    
     li {
+        font-weight: 600;
         display: inline-block;
-        &:nth-child(1),
+        height: 100%;
+        vertical-align: middle;
+        line-height: 17px;
+        &:nth-child(1) {
+            margin-right: 19px;
+            &:after {
+                position: relative;
+                content: url('../images/header-info/arrow-down-header.png');
+                left: 5px;
+            }
+        }
+
         &:nth-child(2) {
-            margin-right: 17px;
+            margin-right: 19px;
         }
 
         &:nth-child(3) {
-            margin-right: 200px;
+            margin-right: 240px;
         }
 
-        &:nth-child(4) {
-            margin-right: 35px;
-        }
-
+        &:nth-child(4),
         &:nth-child(5) {
             margin-right: 35px;
         }
 
         &:nth-child(6), 
-        &:nth-child(7), 
-        &:nth-child(8) {
-            margin-right: 18px;
+        &:nth-child(7) {
+            margin-right: 19px;
         }
 
 
@@ -57,10 +69,11 @@ html {
 }
 .header-top {
     background-color: #FED600;
+    min-height: 32px;
     font-size: 13px;
     color: #000;
-    padding-top: 9px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     
 }
 
@@ -319,6 +332,20 @@ html {
         border: 0px;
     }
 }
+
+
+
+
+@import 'media';
+
+
+
+
+
+
+
+
+
 
 
 
