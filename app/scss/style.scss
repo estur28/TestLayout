@@ -224,10 +224,13 @@ html {
 
 
 .main-info {
-    font-family: 'SF Pro Text', sans-serif;
+    margin-top: 70px;
+    
+    // font-family: 'SF Pro Text', sans-serif;
 }
 .main-info__inner {
     display: flex;
+    align-items: top;
 }
 .main-info__image {
     background-repeat: no-repeat;
@@ -241,14 +244,14 @@ html {
 .main-info__title {
     font-family: 'SFProDisplay-Regular', sans-serif;
     font-size: 27px;
-    max-width: 330px;
+    min-width: 330px;
     font-weight: 400;
     line-height: 33px;
     margin-bottom: 40px;
 }
 .main-info__button {
+    font-family: 'SFProDisplay-Regular', sans-serif;
     font-size: 16px;
-    font-weight: 500;
     line-height: 19px;
     color: #fff;
     max-width: 280px;
@@ -263,20 +266,22 @@ html {
     }
 }
 .main-info__warning {
+    font-family: 'SFProDisplay-Regular', sans-serif;
     font-size: 14px;
-    font-weight: 500;
-    color: #C4C4C4;
+    color: #c4c4c4;
     max-width: 280px;
+    width: 100%;
     padding-right: 40px;
     margin-bottom: 40px;
 }
 .main-info__text {
+    font-family: 'SFProDisplay-Medium', sans-serif;
     font-size: 16px;
-    font-weight: 500;
     max-width: 708px;
     line-height: 19px;
     color: #4D4D4D;
     margin-left: 180px;
+    margin-top: 15px;
     a {
         color: #D2001C;
         border-bottom: 1px solid #D2001C;
@@ -288,20 +293,25 @@ html {
 }
 
 .main-info__blog-title {
+    font-family: 'SFProDisplay-Regular';  
     font-size: 27px;
     font-weight: 500;
     margin-bottom: 50px;
+    position: relative;
+    padding-right: 10px;
     &::after {
-        position: absolute;
+        display: block;
+        width: 870px;
         content: '';
-        width: 68%;
-        border-top: 1px solid #000;
+        position: absolute;
+        border-bottom: 1px solid #000;
         opacity: 0.1;
-        margin-left: 20px;
-        margin-top: 15px;
+        left: 320px;
+        top: 50%;
     }
 }
 .main-info__posts {
+    font-family: 'SFProDisplay-Regular';  
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -333,10 +343,9 @@ html {
     max-width: 1440px;
     min-height: 550px;
     background-color: #F9F9F9;
-    margin-bottom: 100px;
+    margin: 0 auto 100px;
 }
-.about-info__inner {
-}
+
 .about-info__title {
     font-family: 'SF Pro Text', sans-serif;
     font-size: 36px;

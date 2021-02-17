@@ -62,6 +62,24 @@
             margin-bottom: 10px;
         }
     }
+
+    .main-info__text {
+        margin-left: 130px;
+    }
+}
+
+@media (max-width: 1000px)  {
+    .main-info__posts {
+        flex-wrap: wrap;
+        padding-right: 90px;
+    }
+    .main-info__post{
+        margin-bottom: 15px;
+        &:last-child {
+            // padding-left: 20px;
+            margin-right: 50px;
+        }
+    }
 }
 
 @media (max-width: 970px) {
@@ -216,6 +234,62 @@
 }
 
 
+@media (max-width: 850px) {
+    .main-info__text {
+        margin-left: 80px;
+    }
+
+    .main-info__posts {
+        flex-wrap: wrap;
+        padding-right: 90px;
+    }
+    .main-info__post{
+        margin-bottom: 15px;
+        &:first-child {
+            margin-right: 15px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .main-info {
+        &__inner {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        &__image {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            margin-left: 0;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        &__title {
+            p {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__button {
+            margin: 0 auto 10px;
+        }
+
+        &__warning {
+            text-align: center;
+            margin: 0 auto 20px;
+            padding-right: 0px;
+            p {
+                margin: 0 auto 40px;
+                
+            }
+        }
+    }
+}
 
 @media (max-width: 650px) {
     .header-inner {
@@ -259,6 +333,17 @@
             }
         }
     }
+
+    .main-info__post {
+        text-align: center;
+        text-decoration: underline;
+        border-bottom: none;
+        &:first-child {
+            border-bottom: none;
+        }
+    }
+
+  
 }
 
 @media (max-width: 450px) {
@@ -294,6 +379,57 @@
             &:nth-child(5) {
                 margin-right: 10px;
             }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .main-info {
+        // &__inner {
+        //     align-items: center;
+        // }
+
+        &__image {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            margin-left: 0;
+            align-items: center;
+            margin-top: 0;
+        }
+
+        &__title {
+            p {
+                font-size: 20px;
+                // text-align: center;
+            }
+        }
+
+        &__button {
+            margin: 0px;
+        }
+
+        &__warning {
+            text-align: center;
+            margin: 0;
+            padding-right: 0px;
+            p {
+                margin: 0 auto 20px;
+                
+            }
+        }
+
+        &__blog-title {
+            font-size: 20px;
+            text-align: center;
+            &::after {
+                display: none;
+            }
+        }
+
+        &__posts {
+            text-align: center;
         }
     }
 }
