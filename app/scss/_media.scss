@@ -80,6 +80,13 @@
             margin-right: 50px;
         }
     }
+
+    .about-info {
+        display: flex;
+        iframe {
+            flex-wrap: wrap;
+        }
+    }
 }
 
 @media (max-width: 970px) {
@@ -251,6 +258,20 @@
     }
 }
 
+@media (max-width: 800px) {
+
+    .about-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-info__video {
+        iframe {
+            width: 80%;
+            height: 80%;
+        }
+    }
+}
+
 @media (max-width: 720px) {
     .main-info {
         &__inner {
@@ -335,6 +356,7 @@
     }
 
     .main-info__post {
+        margin: 0 auto;
         text-align: center;
         text-decoration: underline;
         border-bottom: none;
@@ -431,6 +453,10 @@
         &__posts {
             text-align: center;
         }
+    }
+
+    .about-info__title {
+        font-size: 28px;
     }
 }
 

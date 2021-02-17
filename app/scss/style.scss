@@ -9,6 +9,11 @@
 
 html {
     box-sizing: border-box;
+    
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 *,
@@ -347,28 +352,36 @@ html {
 }
 
 .about-info__title {
-    font-family: 'SF Pro Text', sans-serif;
+    font-family: 'SFProDisplay-Regular', sans-serif;
     font-size: 36px;
+    color: #222222;
     line-height: 43px;
     font-weight: 400;
     padding-top: 70px;
     margin-bottom: 65px;
+    position: relative;
     &::after {
         position: absolute;
         content: url(/images/footer/slider-left.svg);
-        left: 80%;
-        border: 1px solid #d7d7d7;
-        padding-right: 10px;
-        padding-left: 10px;
+        border: 1px solid #E5E5E5;
+        border-radius: 4px;
+        min-height: 39px;
+        padding-right: 15px;
+        padding-left: 15px;
+        right: 40px;
     }
 
     &::before {
+        display: block;
         position: absolute;
         content: url(/images/footer/slider-right.svg);
-        // left: 90%;
-        border: 1px solid #d7d7d7;
-        padding-right: 10px;
-        padding-left: 10px;
+        border: 1px solid #E5E5E5;
+        // width: 40px;
+        min-height: 39px;
+        border-radius: 4px;
+        padding-right: 15px;
+        padding-left: 15px;
+        right: 0px;
     }
 }
 .about-info__videos {
@@ -377,6 +390,7 @@ html {
    
 }
 .about-info__video {
+    padding-right: 10px;
     iframe {
         border: 0px;
     }
