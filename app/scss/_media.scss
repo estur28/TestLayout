@@ -384,7 +384,7 @@
         }
 
         &__image {
-            margin-bottom: 20px;
+            margin-bottom: 0px;
         }
 
         &__text {
@@ -475,6 +475,12 @@
             &:not(:last-of-type) {
                 margin-right: 30px;
             }
+        }
+    }
+
+    .main-info__title {
+        p {
+            margin-top: 0;
         }
     }
 }
