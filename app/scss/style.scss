@@ -3,10 +3,6 @@
 @import 'fonts';
 @import 'normilize';
 
-@import url('../fonts/SFUIDisplay-Regular');
-
-
-
 html {
     box-sizing: border-box;
     
@@ -34,7 +30,6 @@ html, body {
 
 .header-inner {
     font-weight: 600;
-    
     li {
         font-weight: 600;
         display: inline-block;
@@ -45,8 +40,9 @@ html, body {
             margin-right: 19px;
             &:after {
                 position: relative;
-                content: url('../images/header-info/arrow-down-header.png');
+                content: url('../images/header-info/arrow-down-header.svg');
                 left: 5px;
+                top: -1px;
             }
         }
 
@@ -88,13 +84,10 @@ html, body {
         height: 100%;
         vertical-align: middle;
     }
-
-
     .logo {
         margin-top: 16px;
         margin-bottom: 22px;
     }
-
     .text {
         font-family: 'Open Sans';
         font-weight: normal;
@@ -132,9 +125,7 @@ html, body {
             font-weight: 600;
             line-height: 18px;
             color: #9e9e9e;
-            
         }
-
         input[type="submit"] {
             border: 2px solid #D2001C;
             color: #D2001C;
@@ -152,20 +143,20 @@ html, body {
     }
 
     .button-come-in {
-        margin-top: 42px;
+        margin-top: 34px;
         min-width: 73px;
         margin-right: 32px;
         font-weight: 600;
         font-size: 13px;
         line-height: 17.7px;
         &:before {
-            content: url('../images/header-info/come-in.png');
+            content: url('../images/header-info/come-in.svg');
+            align-items: center;
             position: relative;
-            vertical-align: middle;
             right: 2px;
+            top: 7px;
 
         }
-
     }
     .bascket {
         margin-top: 34px;
@@ -177,7 +168,7 @@ html, body {
         border-radius: 4px;
         &::before {
             position: relative;
-            content: url(/images/header-info/basket.png);
+            content: url('../images/header-info/basket.svg');
             top: 7px;
             left: -4px;
         }
@@ -188,7 +179,6 @@ html, body {
             line-height: 17.7px;
         }
     }
-
     &__menu {
         font-size: 13px;
         font-weight: 400;
@@ -216,9 +206,10 @@ html, body {
     li  {
         display: inline-block;
         &:after {
-            content: url('../images/header-info/arrow-down.png');
+            content: url('../images/header-info/arrow-down.svg');
             position: relative;
             left: 5px;
+            top: 5px;
         }
 
         &:not(:last-of-type) {
@@ -227,11 +218,12 @@ html, body {
     }
 }
 
-
 .main-info {
     margin-top: 70px;
+    h1 {
+        display: none;
+    }
 }
-
 .main-info__inner {
     display: flex;
     align-items: top;
@@ -298,6 +290,9 @@ html, body {
 .main-info__blog {
     font-family: 'San Francisco Pro Display Regular', sans-serif;
     margin-bottom: 65px;
+    h3 {
+        display: none;
+    }
 }
 
 .main-info__blog-title {
@@ -335,7 +330,7 @@ html, body {
     &::after {
         position: relative;
         content: url(/images/main-info__blog/arrow-right.svg);
-        left: 20px;
+        left: 18px;
     }
     &:hover,
     &:first-child {
@@ -344,10 +339,9 @@ html, body {
         &::after {
             position: relative;
             content: url(/images/main-info__blog/arrow-right-red.svg);
-            left: 20px;
+            left: 18px;
         }
     }
-
 }
 .about-info {
     max-width: 1440px;
